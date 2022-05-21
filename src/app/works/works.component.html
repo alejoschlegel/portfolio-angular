@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="works">
+    <div class="block-repo  animate__animated animate__fadeInLeft animation-{{i}}" *ngFor="let item of repos;let i = index">
+      <div class="block-repo-in">
+         <div class="star">
+           <span class="text">{{item.stargazers_count}}</span>
+           <mat-icon>star</mat-icon>
+         </div>
+         <a [href]="item.html_url" target="_blank"><div class="title">{{item.name}}</div></a>
+         <div class="description">{{item.description}}</div>
+         <div class="date">{{item.created_at | date}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <h3 class="title animate__animated animate__fadeInUp animation-1">SELECTED PROJECTS</h3>
+    <h1 class="animate__animated animate__fadeInUp animation-2">See my work!</h1>
+    <p class="animate__animated animate__fadeInUp animation-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eum exercitationem commodi laboriosam dignissimos? Exercitationem aut praesentium neque facilis cupiditate.</p>
+  </div>
+</div>

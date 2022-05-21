@@ -1,0 +1,68 @@
+img {
+    position: absolute;
+    height: 80%;
+    right: 2rem;
+    top: 5rem;
+}
+.img {
+    position: absolute;
+    width: 27rem;
+    height: 80%;
+    right: 2rem;
+    top: 5rem;
+
+    .drawing-0,
+    .drawing-1,
+    .drawing-2
+    {
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+.wrapper {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    padding: 0 2rem;
+    align-items: center;
+    align-content: center;
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 55%;
+
+        .main {
+            .pretitle {
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 1.8rem;
+                letter-spacing: .2px;
+                color: #2323238c;
+            }
+            .title {
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+            }
+            .subtitle {
+                font-size: 3rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+            }
+            .description {
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 1.8rem;
+                letter-spacing: .2px;
+                color: #2323238c;
+                a {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

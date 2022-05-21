@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-1: #f5f5f5;
+    --color-2: #5d5d5d;
+
+    --white: #efefe6;
+    --light-white: #ffffff;
+    --black: #131313;
+    --light-black: #131313;
+    --light-blue: #aac3cd;
+    --purple: #8b3bdb;
+    --light-purple: #e196c1;
+    --orange: #f83d0c;
+    --light-orange: #fa7451;
+    --yellow: #fcac14;
+    --brown: #a66333;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #181818;
+    background-color: var(--color-1);
+    font-family: "open sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #181818;
+}
+@for $i from 1 through 100 {
+    .animation-#{$i} {
+      animation-delay: #{$i /10}s;
+    }
+}

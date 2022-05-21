@@ -1,0 +1,38 @@
+<div class="wrapper">
+    <h1 class="animate__animated animate__fadeInUp animation-1">Let's work together !</h1>
+    
+    <div class="container animate__animated animate__fadeInUp animation-2">
+    <div class="contact column animate__animated animate__fadeInUp animation-4">
+        <div>
+            <h2>Contact</h2>
+            <p>
+                Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.
+            </p>
+        </div>
+        <ul class="list">
+            <li class="item" *ngFor="let item of contactLinks">
+                <a href={{item.src}}><h3>{{item.title}}</h3></a>
+                <a>{{item.info}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="availability column animate__animated animate__fadeInUp animation-5">
+        <h2>Current availability</h2>
+        <ul class="list">
+             <li class="item">
+                    <a>I usually work on several projects but I'll be happy to discuss new opportunities. Let's get in touch!</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="social column animate__animated animate__fadeInUp animation-6">
+        <h2>Follow me</h2>
+        <ul class="list">
+            <li class="item" *ngFor="let item of socialLinks">
+                <a href={{item.src}} target="_blank"><h3>{{item.title}}</h3></a>
+                <a>{{item.info}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

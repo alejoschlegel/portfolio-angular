@@ -1,0 +1,60 @@
+.wrapper {
+    height: 65vh;
+    padding-top: 2rem;
+    padding: 0 1rem;
+
+    h1{
+        font-size: 4rem;
+        padding-bottom: 2rem;
+        font-weight: 800;
+        margin-left: 2rem;
+    }
+    h2 {
+        padding-bottom: 1rem;
+        font-weight: 800;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #5d5d5d;
+    }
+    a,p {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        letter-spacing: .2px;
+        color: #2323238c;
+    }
+
+    .container {
+        display: flex;
+        margin: 0 2rem;
+        padding: 2rem 0rem;
+        border-top: 0.2rem solid #5d5d5d;
+        gap: 2rem;
+        justify-content: space-around;
+        .column {
+            max-width: 20rem;
+        }
+        .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .item {
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
+
+/***************************** MEDIA QUERIES *****************************/
+@media (max-width: 975px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        .column {
+            min-width: 40rem;
+        }
+    }
+}
